@@ -1,0 +1,122 @@
+[
+  {
+    "scenario_id": "EVAL-01",
+    "category": "Relevansi Dasar",
+    "query": "berapa jatah cuti tahunan saya?",
+    "latency_seconds": 8.479,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Untuk karyawan tetap, jatah cuti tahunan yang didapatkan adalah 12 hari. Cuti ini dapat mulai diambil setelah kamu memiliki masa kerja minimal 3 bulan."
+  },
+  {
+    "scenario_id": "EVAL-02",
+    "category": "Relevansi Dasar",
+    "query": "gimana cara reset password vpn ya",
+    "latency_seconds": 21.266,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Untuk melakukan reset password VPN, Anda bisa mengerjakannya secara mandiri melalui portal self-service IT. Namun, jika akun Anda terkunci, Anda dapat menghubungi tim IT Support untuk dibantu lebih lanjut."
+  },
+  {
+    "scenario_id": "EVAL-03",
+    "category": "Parafrase/Sinonim",
+    "query": "saya lupa kata sandi laptop kantor, harus gimana?",
+    "latency_seconds": 7.319,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Jika Anda lupa kata sandi laptop kantor, silakan hubungi tim IT Support melalui tiket untuk melakukan reset password. \n\nSebelum reset dilakukan, tim IT Support akan melakukan verifikasi identitas Anda terlebih dahulu."
+  },
+  {
+    "scenario_id": "EVAL-04",
+    "category": "Di Luar Cakupan",
+    "query": "apakah kantor menyediakan tempat parkir motor gratis?",
+    "latency_seconds": 27.767,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Mohon maaf, saat ini saya belum memiliki informasi mengenai fasilitas tempat parkir motor di kantor. Silakan menghubungi tim IT Support untuk bantuan lebih lanjut ya. Terima kasih!"
+  },
+  {
+    "scenario_id": "EVAL-05",
+    "category": "Di Luar Cakupan",
+    "query": "siapa nama CEO perusahaan ini?",
+    "latency_seconds": 7.642,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Mohon maaf, saya belum memiliki informasi mengenai nama CEO perusahaan ini. Silakan hubungi tim IT Support untuk bantuan lebih lanjut, ya."
+  },
+  {
+    "scenario_id": "EVAL-06",
+    "category": "Tool Call Valid",
+    "query": "apa status TICKET-0005?",
+    "latency_seconds": 1.184,
+    "status": "success",
+    "intent": "ticket_status",
+    "http_code": 200,
+    "actual_response": "Tiket TICKET-0005 (Access): Reset password VPN gagal terus. Status: Diproses. Pembaruan terakhir: 2026-08-27."
+  },
+  {
+    "scenario_id": "EVAL-07",
+    "category": "Tool Call Invalid",
+    "query": "apa status TICKET-9999?",
+    "latency_seconds": 1.864,
+    "status": "success",
+    "intent": "ticket_status",
+    "http_code": 200,
+    "actual_response": "Tiket TICKET-9999 tidak ditemukan di sistem. Periksa kembali nomor tiket Anda, atau hubungi tim IT Support jika Anda yakin nomor tiket sudah benar."
+  },
+  {
+    "scenario_id": "EVAL-08",
+    "category": "Tool Call Ambigu",
+    "query": "tiket saya gimana ya?",
+    "latency_seconds": 11.978,
+    "status": "success",
+    "intent": "ticket_status",
+    "http_code": 200,
+    "actual_response": "Saya mendeteksi Anda menanyakan status tiket, tetapi tidak menemukan nomor tiketnya. Format nomor tiket: TICKET-XXXX (contoh: TICKET-0001). Silakan sebutkan nomor tiket Anda."
+  },
+  {
+    "scenario_id": "EVAL-09",
+    "category": "Routing Ambigu",
+    "query": "kenapa laptop saya lambat dan gimana cara cek tiket yang saya buat soal itu?",
+    "latency_seconds": 6.017,
+    "status": "success",
+    "intent": "ticket_status",
+    "http_code": 200,
+    "actual_response": "Saya mendeteksi Anda menanyakan status tiket, tetapi tidak menemukan nomor tiketnya. Format nomor tiket: TICKET-XXXX (contoh: TICKET-0001). Silakan sebutkan nomor tiket Anda."
+  },
+  {
+    "scenario_id": "EVAL-10",
+    "category": "Konsistensi",
+    "query": "berapa hari cuti tahunan yang saya dapat?",
+    "latency_seconds": 5.724,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Untuk karyawan tetap, Anda mendapatkan jatah 12 hari cuti tahunan. Cuti ini dapat diambil setelah Anda memiliki masa kerja minimal 3 bulan. \n\nAda yang bisa saya bantu lagi?"
+  },
+  {
+    "scenario_id": "EVAL-11",
+    "category": "Beban Panjang",
+    "query": "Tolong jelaskan sedetail-detailnya seluruh kebijakan cuti, reset password, permintaan perangkat, dan proses onboarding sekaligus dalam satu jawaban.",
+    "latency_seconds": 6.782,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Tentu, berikut informasi yang bisa saya bagikan terkait hal tersebut:\n\n1. **Reset Password:**"
+  },
+  {
+    "scenario_id": "EVAL-12",
+    "category": "Resource/Token",
+    "query": "halo",
+    "latency_seconds": 6.732,
+    "status": "success",
+    "intent": "faq",
+    "http_code": 200,
+    "actual_response": "Halo! Ada yang bisa saya bantu? \n\nSilakan tanyakan hal terkait waktu perbaikan perangkat, aplikasi komunikasi internal, atau prosedur izin sakit."
+  }
+]

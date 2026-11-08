@@ -1,0 +1,15 @@
+# Environment variables — JANGAN di-commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+venv.*
+
+# Hasil mentah pengukuran (boleh di-commit, tapi jangan sampah runtime)
+system/data/*.faiss

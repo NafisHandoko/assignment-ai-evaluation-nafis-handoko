@@ -1,0 +1,15 @@
+# Environment variables (API keys) — JANGAN di-commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+venv.*
+
+# Jupyter
+.ipynb_checkpoints/
